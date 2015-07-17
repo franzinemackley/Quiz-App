@@ -1,0 +1,126 @@
+
+body {
+	background-color: #A9D2BC;
+	text-align: center;
+	margin: 50px;
+	overflow: hidden;
+}
+
+.image {
+	width: 100%;
+    align-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    text-align: center;
+}
+
+img {
+	width: 100px;
+}
+
+h1 {
+	font-size: 4.3em;
+	line-height: 110%;
+	color: #fff;
+	font-family: 'Viga', sans-serif;
+}
+h2,
+.grade,
+.label {
+	font-size: 2.6em;
+	line-height: 110%;
+	color: #fff;
+	font-family: 'Viga', sans-serif;
+}
+
+h3,
+.description {
+	font-size: 1.3em;
+	color: #4A7389;
+	font-family: 'Karla', sans-serif;
+}
+
+#start {
+	font-size: 1.3em;
+	margin: 20px;
+	padding: 20px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	background-color: #FFBDAA;
+	text-transform: uppercase;
+	font-family: 'Viga', sans-serif;
+	cursor: pointer;
+}
+
+#start:hover, 
+#submit:hover {
+	background-color: #FFD8CC;
+}
+
+.topheader {
+   width: 100%;
+   align-content: center;
+   box-sizing: border-box;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+   align-items: center;
+   -webkit-justify-content: space-around;
+   text-align: center;
+}
+.questionnumber {
+	width: 20%;
+	display: inline-block;
+}
+.question {
+	width: 70%;
+	display: inline-block;
+}
+
+#option {
+	font-size: 1.3em;
+	margin: 20px;
+	padding: 20px;
+	color: #fff;
+	border: none;
+	background-color: #A2BAC7;
+	font-family: 'Karla', sans-serif;
+	cursor: pointer;
+	width: 60%;
+}
+
+#option:hover {
+	border: 3px solid #FFBDAA;
+}
+
+
+#submit {
+	font-size: 1.3em;
+	margin: 20px;
+	padding: 20px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	background-color: #FFBDAA;
+	text-transform: uppercase;
+	font-family: 'Viga', sans-serif;
+	cursor: pointer;
+}
+
+.front {
+	visibility: visible;
+}
+
+.first,
+.second,
+.third,
+.results {
+	visibility: hidden;
+}
