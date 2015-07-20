@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Startup Jargon Quiz</title>
+	<title>Startup Buzzwords Quiz</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
@@ -10,65 +11,61 @@
 	<link href='http://fonts.googleapis.com/css?family=Viga|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
+<!--Front Page -->
+
 <section class="front">
 		<div class="image"><center><img src="images/mobile.svg"></center></div>
-			
-<h1>Do You Know <br>Your Startup <br>Buzzwords?</h1> <h3>See how well you would fit in Silicon Valley!</h3>
+<div class="heading">			
+	<h1>Do You Know <br>Your Startup <br>Buzzwords?</h1>
+	<h3>See how well you would fit in Silicon Valley!</h3>
+</div>
+</div>
 <button id="start" type="submit">Start Quiz</button>
 	</section>
 
-<section class="first">
+<!--Quiz Questions-->
+<section class="quiz">
 	<div class="topheader">
-		<div class="questionnumber"><h2>1/10</h2>
+		<div class="questionnum">
+			<h2 id="questionnumber"> </h2>
 		</div>
-		<div class="question"><h2>What's an accelerator?</h2>
-		</div>
-		<button id="option" type="submit">Option 1</button>
-		<button id="option" type="submit">Option 2</button>
-		<button id="option" type="submit">Option 3</button>
-		<br>
-		<button id="submit" type="submit">Submit</button>
+		<h2 class="question"> 
+		
+		</h2>
 	</div>
+	
+	<div class="options">
+		<button id="option1" name="buttons" value="1"></button>
+		<button id="option2" name="buttons" value="2"></button>
+		<button id="option3" name="buttons" value="3"></button>	
+	</div>
+	</section>
+		<!-- Feedback Section -->
+		<section class="results">
+		<div class="feedback"> </div>
+		<button id="next" type="submit">Next</button>
+
+		</section>
+  
+	
+	<section class="done">
+	<button id="last" type="submit">Show My Results!</button>
 </section>
 
-<section class="second">
-	<div class="topheader">
-		<div class="questionnumber"><h2>2/10</h2>
-		</div>
-		<div class="question"><h2>What does FMA stand for?</h2>
-		</div>
-		<button id="option" type="submit">Option 1</button>
-		<button id="option" type="submit">Option 2</button>
-		<button id="option" type="submit">Option 3</button>
-		<br>
-		<button id="submit" type="submit">Submit</button>
-	</div>
-</section>
 
-<section class="third">
-	<div class="topheader">
-		<div class="questionnumber"><h2>3/10</h2>
-		</div>
-		<div class="question"><h2>How would you describe disruptive technology?</h2>
-		</div>
-		<button id="option" type="submit">Option 1</button>
-		<button id="option" type="submit">Option 2</button>
-		<button id="option" type="submit">Option 3</button>
-		<br>
-		<button id="submit" type="submit">Submit</button>
-	</div>
-</section>
+<!-- Results Page -->
 
-<section class="results">
+<section class="end">
 	<h1>Your Results:</h1>
-		<section class="grade"> 95%
+		<section class="grade"> 
 		</section>
-		<section class="label">You are a tech genius!</section>
+		<section class="label"></section>
 		<br>
-		<section class="description">Description of the results starts right here
+		<section class="description">
 		</section>
 
-		<button id="submit" type="submit">Play Again</button>
+		<button id="reset" type="submit">Play Again</button>
 	</div>
 
 	</div>

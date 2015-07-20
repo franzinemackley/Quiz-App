@@ -3,7 +3,6 @@ body {
 	background-color: #A9D2BC;
 	text-align: center;
 	margin: 50px;
-	overflow: hidden;
 }
 
 .image {
@@ -24,14 +23,15 @@ img {
 }
 
 h1 {
-	font-size: 4.3em;
+	font-size: 4.2em;
 	line-height: 110%;
 	color: #fff;
 	font-family: 'Viga', sans-serif;
 }
 h2,
-.grade,
-.label {
+.label,
+.right,
+.wrong {
 	font-size: 2.6em;
 	line-height: 110%;
 	color: #fff;
@@ -39,7 +39,27 @@ h2,
 }
 
 h3,
-.description {
+.description,
+.answer,
+.feedback {
+	font-size: 1.3em;
+	color: #4A7389;
+	font-family: 'Karla', sans-serif;
+}
+.grade {
+	font-size: 2.6em;
+	line-height: 110%;
+	color: #FFF5E8;
+	font-family: 'Viga', sans-serif;
+}
+
+.feedback {
+	width: 60%;
+	margin: auto;
+}
+
+.label {
+	margin-top: 10px;
 	font-size: 1.3em;
 	color: #4A7389;
 	font-family: 'Karla', sans-serif;
@@ -59,7 +79,9 @@ h3,
 }
 
 #start:hover, 
-#submit:hover {
+#submit:hover,
+#next:hover,
+#reset:hover {
 	background-color: #FFD8CC;
 }
 
@@ -75,16 +97,21 @@ h3,
    -webkit-justify-content: space-around;
    text-align: center;
 }
-.questionnumber {
+.questionnum {
 	width: 20%;
 	display: inline-block;
+	margin: 10px;
 }
 .question {
 	width: 70%;
 	display: inline-block;
+	margin: 10px;
 }
 
-#option {
+
+#option1,
+#option2,
+#option3 {
 	font-size: 1.3em;
 	margin: 20px;
 	padding: 20px;
@@ -96,12 +123,19 @@ h3,
 	width: 60%;
 }
 
-#option:hover {
-	border: 3px solid #FFBDAA;
+#option1:hover,
+#option2:hover,
+#option3:hover {
+	background-color: #FFBDAA;
 }
 
 
-#submit {
+
+#submit,
+#reset,
+#next,
+#last
+ {
 	font-size: 1.3em;
 	margin: 20px;
 	padding: 20px;
@@ -118,9 +152,12 @@ h3,
 	visibility: visible;
 }
 
-.first,
-.second,
-.third,
-.results {
-	visibility: hidden;
+.quiz,
+.feedback,
+.end,
+.results,
+.done
+ {
+	display: none;
 }
+
